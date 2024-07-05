@@ -5,9 +5,7 @@ const useThemeStore = defineStore('useThemeStore', () => {
     cmsMode.value === 'light' ? cmsMode.value = 'dark' : cmsMode.value = 'light'
   }
 
-  const getCmsMode = computed(() => cmsMode)
-
-  return { toggleCmsTheme, getCmsMode }
+  return { toggleCmsTheme, cmsMode }
 })
 
 export default useThemeStore

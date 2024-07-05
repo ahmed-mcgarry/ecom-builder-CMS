@@ -1,8 +1,9 @@
+import { getWidgetAttributes } from '@/lib/widget'
+
 const useElementStore = defineStore('useElementStore', () => {
   const element = ref()
   const isEditing = ref(false)
 
-  const activeElement = computed(() => element)
   const isIdActive = computed(() => (id: string | null) => element.value?.id === id)
 
   const setActiveElement = (widget: any) => {
@@ -13,10 +14,17 @@ const useElementStore = defineStore('useElementStore', () => {
     isEditing.value = !isEditing.value
   }
 
+  const activeElementAttributes = computed(() => {
+    if (!element) return []
+
+    return getWidgetAttributes(element.value.is)
+  })
+
   return {
-    activeElement,
+    element,
     isIdActive,
     isEditing,
+    activeElementAttributes,
     toggleEditActive,
     setActiveElement
   }

@@ -57,8 +57,8 @@ class BannerSmall extends Widget {
     return new BannerSmall(this.parentId)
   }
 
-  getAttributes (): string[] {
-    return ['TextWidget']
+  getAttributes (): any[] {
+    return [{ attribute: 'AttributeContent', description: 'Update small banner content', placeholder: 'Update content here' }]
   }
 }
 
@@ -88,7 +88,7 @@ export const createWidget = (is: string, parentId: string = 'root'): Widget | nu
   }
 }
 
-export const getWidgetAttributes = (is: string): string[] | null => {
+export const getWidgetAttributes = (is: string): any[] | null => {
   switch (is) {
     case 'BannerSmall':
       return new BannerSmall().getAttributes()
@@ -96,7 +96,7 @@ export const getWidgetAttributes = (is: string): string[] | null => {
       return new CardSimple().getAttributes()
       // Add other cases here for different types of Widgets
     default:
-      console.error(`Error creating ${is}`)
+      console.error(`Error getting ${is} attributes`)
       return null
   }
 }

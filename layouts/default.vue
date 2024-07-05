@@ -1,7 +1,7 @@
 <template>
-  <div class="" :class="[getCmsMode]">
+  <div class="" :class="[themeStore.cmsMode]">
     <div class="flex h-full min-h-screen font-secondary text-clear">
-      <CmsSidebar />
+      <!-- <CmsSidebar /> -->
       <div class="flex flex-col w-full h-full max-h-screen">
         <CmsNav />
 
@@ -14,5 +14,5 @@
 </template>
 
 <script setup lang="ts">
-const { getCmsMode } = useThemeStore()
+const themeStore = useThemeStore()
 </script>

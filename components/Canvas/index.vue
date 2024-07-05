@@ -1,5 +1,5 @@
 <template>
-  <div class="container overflow-auto rounded shadow resize-x bg-surface light">
+  <div v-if="data" class="container mx-auto overflow-auto rounded shadow resize-x bg-surface light">
     <HeaderGlobal />
     <HeaderNav />
     <CmsPageComponent

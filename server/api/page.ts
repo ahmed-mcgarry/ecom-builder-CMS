@@ -8,6 +8,7 @@ export default defineEventHandler(() => {
       widgets: [
         {
           is: 'BannerSmall',
+          name: 'Banner Small',
           content: 'Free standard delivery when you spend £45 or more!',
           id: 1,
           parentId: 'root',
@@ -16,6 +17,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'ContainerCarousel',
+          name: 'Container Carousel',
           id: 14,
           parentId: 'root',
           slots: [2],
@@ -29,6 +31,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'BannerLarge',
+          name: 'Banner Large',
           id: 2,
           parentId: '14',
           slots: [],
@@ -36,6 +39,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'ContainerCarousel',
+          name: 'Container Carousel',
           title: 'Shop Latest Drops',
           subtitle: 'Mens',
           id: 3,
@@ -49,6 +53,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'CardSimple',
+          name: 'Card Simple',
           id: 4,
           parentId: 3,
           slots: [],
@@ -56,6 +61,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'ContainerCarousel',
+          name: 'Container Carousel',
           title: 'Shop by Category',
           subtitle: 'Mens',
           id: 5,
@@ -65,6 +71,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'CardSimple',
+          name: 'Card Simple',
           id: 6,
           parentId: 3,
           slots: [],
@@ -72,6 +79,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'BannerSmall',
+          name: 'Banner Small',
           content: 'Free standard delivery when you spend £45 or more!',
           id: 7,
           parentId: 'root',
@@ -80,6 +88,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'BannerLarge',
+          name: 'Banner Large',
           id: 8,
           parentId: 'root',
           slots: [],
@@ -87,6 +96,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'ContainerCarousel',
+          name: 'Container Carousel',
           title: 'Shop Latest Drops',
           subtitle: 'Womens',
           id: 9,
@@ -96,6 +106,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'CardSimple',
+          name: 'Card Simple',
           id: 10,
           parentId: 9,
           slots: [],
@@ -103,6 +114,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'ContainerCarousel',
+          name: 'Container Carousel',
           title: 'Shop by Category',
           subtitle: 'Womens',
           id: 11,
@@ -115,6 +127,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'CardSimple',
+          name: 'Card Simple',
           id: 12,
           parentId: 11,
           slots: [],
@@ -122,6 +135,7 @@ export default defineEventHandler(() => {
         },
         {
           is: 'BannerLarge',
+          name: 'Banner Large',
           id: 13,
           parentId: 'root',
           slots: [],
