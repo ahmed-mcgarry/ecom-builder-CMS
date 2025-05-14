@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/tailwindcss',
+    '@nuxt/ui',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }]
   ],
   pinia: {
