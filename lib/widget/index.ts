@@ -58,7 +58,11 @@ class BannerSmall extends Widget {
   }
 
   getAttributes (): any[] {
-    return [{ attribute: 'AttributeContent', description: 'Update small banner content', placeholder: 'Update content here' }]
+    return [{
+      attribute: 'AttributeContent',
+      description: 'Update small banner content',
+      placeholder: 'Update content here'
+    }]
   }
 }
 

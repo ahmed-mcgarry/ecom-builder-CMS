@@ -1,7 +1,7 @@
 <template>
   <div v-if="widget">
     <CmsElementWrapper v-if="widget.slots.length" v-bind="widget">
-      <component :is="widget.is" v-if="widget.slots.length" v-bind="widget">
+      <component :is="widget.is" v-bind="widget">
         <template
           v-for="child in childWidgets"
           :key="child.id"
@@ -27,10 +27,10 @@ import { computed } from 'vue'
 import type { Page } from '~/types/page'
 import type { Widget } from '~/types/widget'
 
-    interface Props {
-      widget: Widget;
-      pageData: Page;
-    }
+interface Props {
+    widget: Widget;
+    pageData: Page;
+}
 
 const props = defineProps<Props>()
 

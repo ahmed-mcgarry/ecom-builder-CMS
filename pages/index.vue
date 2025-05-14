@@ -3,7 +3,7 @@
     <template #default>
       <div class="container relative flex gap-4 mx-auto overflow-hidden">
         <CmsCanvas />
-        <CmsEditor v-if="elementStore.isEditing" />
+        <CmsEditor />
       </div>
     </template>
     <template #fallback>
@@ -13,5 +13,4 @@
 </template>
 
 <script setup lang="ts">
-const elementStore = useElementStore()
 </script>

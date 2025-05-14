@@ -27,7 +27,7 @@ export default defineEventHandler(() => {
           },
           showArrows: false,
           fullBleed: true,
-          class: 'hero'
+          class: 'hero pt-0'
         },
         {
           is: 'BannerLarge',
@@ -87,8 +87,8 @@ export default defineEventHandler(() => {
           children: []
         },
         {
-          is: 'BannerLarge',
-          name: 'Banner Large',
+          is: 'VideoFeature',
+          name: 'VideoFeature',
           id: 8,
           parentId: 'root',
           slots: [],
@@ -130,14 +130,6 @@ export default defineEventHandler(() => {
           name: 'Card Simple',
           id: 12,
           parentId: 11,
-          slots: [],
-          children: []
-        },
-        {
-          is: 'BannerLarge',
-          name: 'Banner Large',
-          id: 13,
-          parentId: 'root',
           slots: [],
           children: []
         }
